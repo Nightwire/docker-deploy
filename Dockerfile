@@ -4,6 +4,8 @@ MAINTAINER Philip Henning <mail@philip-henning.com>
 RUN apk add --update --no-cache ca-certificates openssl openssh-client rsync bash && \
   rm /var/cache/apk/*
 
+COPY ./add-ssh-key.sh /add-ssh-key.sh
+
 VOLUME /src
 VOLUME /output
 
