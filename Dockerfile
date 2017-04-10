@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Philip Henning <mail@philip-henning.com>
 
-RUN apk add --update --no-cache ca-certificates openssl openssh-client rsync && \
+RUN apk add --update --no-cache ca-certificates openssl openssh-client rsync bash && \
   rm /var/cache/apk/*
 
 VOLUME /src
